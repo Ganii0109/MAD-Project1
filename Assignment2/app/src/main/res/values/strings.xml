@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Assignment2</string>
+    <string name="textViewChooseCases">Choose 4 Cases</string>
+    <string name="logo">logo\n</string>
+    <string name="s1">s1</string>
+    <string name="buttonReset">Reset</string>
+    <string name="buttonDeal">Deal</string>
+    <string name="buttonNodeal">No Deal</string>
+</resources>

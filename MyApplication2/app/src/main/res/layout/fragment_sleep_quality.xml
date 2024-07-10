@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SleepQualityFragment">
+
+    <TextView
+        android:id="@+id/textViewRateSleep"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="How would you rate the quality of your sleep?"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupSleepQuality"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/textViewRateSleep"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButtonExcellent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Excellent (5)"
+            android:textSize="16sp"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonVeryGood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Very Good (4)"
+            android:textSize="16sp"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonGood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Good (3)"
+            android:textSize="16sp"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonFair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fair (2)"
+            android:textSize="16sp"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonPoor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Poor (1)"
+            android:textSize="16sp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonSubmitSleepQuality"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupSleepQuality"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

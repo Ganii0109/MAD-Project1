@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Date/Time -->
+    <TextView
+        android:id="@+id/labelDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Date/Time:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDateTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="N/A"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/labelDateTime"
+        app:layout_constraintEnd_toStartOf="@id/btnPickDateTime"
+        app:layout_constraintStart_toEndOf="@id/labelDateTime" />
+
+    <Button
+        android:id="@+id/btnPickDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Choose"
+        app:layout_constraintBottom_toBottomOf="@id/textViewDateTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewDateTime" />
+
+    <!-- Sleep Hours -->
+
+    <TextView
+        android:id="@+id/labelSleepHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Sleep hrs:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelDateTime" />
+
+    <TextView
+        android:id="@+id/textViewSleepHours"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="N/A"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/labelSleepHours"
+        app:layout_constraintEnd_toStartOf="@id/buttonSleepHours"
+        app:layout_constraintStart_toEndOf="@id/labelSleepHours" />
+
+    <!-- Sleep Quality -->
+
+    <Button
+        android:id="@+id/buttonSleepHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Choose"
+        app:layout_constraintBottom_toBottomOf="@id/textViewSleepHours"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPickDateTime"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/labelSleepQuality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="76dp"
+        android:text="Sleep Quality:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelSleepHours" />
+
+    <TextView
+        android:id="@+id/textViewSleepQuality"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="N/A"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/labelSleepQuality"
+        app:layout_constraintEnd_toStartOf="@id/buttonSleepQuality"
+        app:layout_constraintTop_toTopOf="@id/labelSleepQuality"
+        app:layout_constraintBottom_toBottomOf="@id/labelSleepQuality"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/buttonSleepQuality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Choose"
+        app:layout_constraintBottom_toBottomOf="@id/textViewSleepQuality"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewSleepQuality" />
+
+    <!-- Exercise Hours -->
+
+    <TextView
+        android:id="@+id/labelExerciseHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Exercise hrs:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelSleepQuality" />
+
+    <TextView
+        android:id="@+id/textViewExerciseHours"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="N/A"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/labelExerciseHours"
+        app:layout_constraintEnd_toStartOf="@id/buttonExerciseHours"
+        app:layout_constraintTop_toTopOf="@id/labelExerciseHours"
+        app:layout_constraintBottom_toBottomOf="@id/labelExerciseHours"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/buttonExerciseHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Choose"
+        app:layout_constraintBottom_toBottomOf="@id/textViewExerciseHours"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewExerciseHours" />
+
+    <!-- Weight -->
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="176dp"
+        android:hint="Weight in pounds"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSubmit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
